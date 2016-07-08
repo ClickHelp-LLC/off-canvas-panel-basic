@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  
+  <link rel="stylesheet" href="https://clickhelp.co/style-bundles/site-styles/" />
+  <script src="https://use.fontawesome.com/f63013d5c7.js"></script>
+
+  <link rel="stylesheet" href="essential-style.css" />
+  <link rel="stylesheet" href="demo-style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="pnlContainer" class="container">
+    <div class="content">
+      <nav class="nav">
+        <header>          
+          <div class="headerContent">
+			<i id="btnClose" class="fa fa-close"></i>          		  
+			<i class="fa fa-bell-o notification">
+              <span>6</span>
+            </i>
+
+            <img src="neo.jpg" class="avatar" />Neo
+          </div>
+        </header>
+        <ul>
+          <li><a href="https://clickhelp.co/" target="_blank"><i class="fa fa-question-circle-o"></i>Your Documentation Tool</a></li>
+		  <li><a href="https://clickhelp.co/online-documentation-tool/#SingleSourcing" target="_blank"><i class="fa fa-code-fork"></i>Single-Sourcing</a></li>
+		  <li><a href="https://clickhelp.co/online-documentation-tool/#ContentManagement" target="_blank"><i class="fa fa-puzzle-piece"></i>Content Management</a></li>
+		  <li><a href="https://clickhelp.co/online-documentation-tool/#TeamworkAndProjectManagement" target="_blank"><i class="fa fa-users"></i>Teamwork</a></li>
+		  <li><a href="https://clickhelp.co/online-documentation-tool/#CloudAuthoring" target="_blank"><i class="fa fa-cloud"></i>Cloud Authoring</a></li>
+		  <li><a href="https://clickhelp.co/online-documentation-tool/#CustomerFeedback" target="_blank"><i class="fa fa-comments-o"></i>Customer Feedback</a></li>
+		  <li><a href="https://clickhelp.co/online-documentation-tool/#CustomerFeedback" target="_blank"><i class="fa fa-search"></i>SEO Friendly</a></li>
+		  <!--<li><i class="fa fa-file-text-o"></i>Text File</li>
+          <li><i class="fa fa-youtube-play"></i>YouTube Video</li>
+          <li><i class="fa fa-picture-o"></i>Image File</li>
+          <li><i class="fa fa-line-chart"></i>Managers Like Charts</li>
+          <li><i class="fa fa-magic"></i>Programming is Magic</li>
+          <li><i class="fa fa-bicycle"></i>Random Bicycle</li>-->
+        </ul>
+      </nav>
+      <div id="pnlOverlay" class="overlay"></div>
+      <div class="menu">
+        <a id="lnkMenu" class="hamburgerButton" href="#">
+          <span></span>
+        </a>
+		<a class="navLink" href="https://clickhelp.co/clickhelp-technical-writing-blog/">More posts...</a>
+		<a class="navLink" href="#"><i class="fa fa-angle-left"></i>Back to blog post</a>		
+      </div>
+      <div class="description">
+        <h1>Off-Canvas Panel Demo</h1>
+        <p>Click the hamburger button at the top left corner of the screen to invoke the menu.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    //initOffCanvasPanel("pnlContainer", "lnkMenu", "pnlOverlay");
+    // If you want an explicit "Close" button, you can do it like this:
+    initOffCanvasPanel("pnlContainer", "lnkMenu", ["pnlOverlay", "btnClose"]);
+  </script>
+</body>
+</html>
